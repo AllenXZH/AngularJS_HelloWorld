@@ -1,0 +1,24 @@
+<p>This is the partial for view 1.</p>
+
+<div>
+    <p>{{1+4}}</p>
+    <p>{{firstname}}</p>
+    <input ng-model="firstname">
+    <p ng-model="lastname">{{lastname}}</p>
+
+    <md-button class="md-primary md-raised" ng-click="getUsers()">USERS</md-button>
+
+    <ul>
+        <li class="md-2-line" ng-repeat="user in users">
+            <div class="md-list-item-text">
+                <p>{{user.name}}, {{user.password}}</p>
+                <p></p>
+            </div>
+        </li>
+    </ul>
+
+    <input type="checkbox" ng-model="checkbox"/>
+    <div ng-hide="checkbox" >HIDE</div>
+
+
+</div>
